@@ -5,7 +5,8 @@
   "main": "dist/beedle.js",
   "scripts": {
     "test": "mocha --require babel-core/register || true",
-    "build": "node bundler.js"
+    "build": "node bundler.js",
+    "type": "tsc && npm run build"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,8 @@
     "mocha": "^5.2.0",
     "rollup": "^0.63.5",
     "rollup-plugin-uglify-es": "0.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2",
     "vuepress": "^0.13.1"
   },
   "dependencies": {}
